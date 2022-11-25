@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Report</title>
+  <script type='text/javascript' src='https://code.jquery.com/jquery-2.1.0.js'></script>
+
+  <script type='text/javascript' src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+  <link href="https://dl.betterscan.io/assets/css/reportstyle.css" rel="stylesheet">
+
+
+
+
+
+<script type='text/javascript'>//<![CDATA[
+$(window).load(function(){
+var data =
+[
+    {
+        "hash": "5f604726375190779183e6afb0ae9cec",
+        "description": "GoogleYouTubeAPIKey",
+        "severity": "Warning",
+        "file": "app/google-services.json",
+        "line": 39
+    },
+    {
+        "hash": "6e2e5a94d93c22934ac69cbf9352b478",
+        "description": "All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.",
+        "severity": "Warning",
+        "file": "app/src/main/java/com/example/securenotes/Utility.java",
+        "line": 14
+    },
+    {
+        "hash": "00ce5accdaaae2ff3e3e74a6a8f8c521",
+        "description": "Unused import 'android.widget.Toast'",
+        "severity": "Warning",
+        "file": "app/src/main/java/com/example/securenotes/CreateAccountActivity.java",
+        "line": 13
+    },
+    {
+        "hash": "0aefee3051132066d927da9dd2abb4f8",
+        "description": "Unused import 'org.junit.Assert.*'",
+        "severity": "Warning",
+        "file": "app/src/androidTest/java/com/example/securenotes/ExampleInstrumentedTest.java",
+        "line": 11
+    },
+    {
+        "hash": "93e6b062d66dbc6fcf0fb3e4304d6b2b",
+        "description": "Use one line for each declaration, it enhances code readability.",
+        "severity": "Warning",
+        "file": "app/src/main/java/com/example/securenotes/CreateAccountActivity.java",
+        "line": 22
+    },
+    {
+        "hash": "14e61be9e9a34d90b292fe432863fcf1",
+        "description": "Document empty constructor",
+        "severity": "Warning",
+        "file": "app/src/main/java/com/example/securenotes/Note.java",
+        "line": 10
+    },
+    {
+        "hash": "32379a004b7a035b69da230ea13e58f6",
+        "description": "Useless qualified this usage in the same class.",
+        "severity": "Warning",
+        "file": "app/src/main/java/com/example/securenotes/CreateAccountActivity.java",
+        "line": 61
+    },
+    {
+        "hash": "a969584e48de0a80782a643efa72f621",
+        "description": "The JUnit 4 test method name 'addition_isCorrect' doesn't match '[a-z][a-zA-Z0-9]*'",
+        "severity": "Warning",
+        "file": "app/src/test/java/com/example/securenotes/ExampleUnitTest.java",
+        "line": 14
+    }
+]
+var sort_by = function(field, reverse, primer){
+
+   var key = primer ?
+       function(x) {return primer(x[field])} :
+       function(x) {return x[field]};
+
+   reverse = !reverse ? 1 : -1;
+
+   return function (a, b) {
+       return a = key(a), b = key(b), reverse * ((a > b) - (b > a));
+     }
+}
+
+for(var i = 0; i < data.length; i++) {
+
+    if(data[i].risk=="Information")
+    {
+        data[i].risk_no=1;
+    }
+
+    if(data[i].risk=="Low")
+    {
+        data[i].risk_no=2;
+    }
+
+    if(data[i].risk=="Medium")
+    {
+        data[i].risk_no=3;
+    }
+
+    if(data[i].risk=="High")
+    {
+        data[i].risk_no=4;
+    }
+
+
+
+
+
+}
+
+data.sort(sort_by('risk_no', true, parseInt));
+
+
+
+for(var i = 0; i < data.length; i++) {
+$('#findings').append("<tbody><tr><th>File</th><td>"+data[i].file+"</td></tr>");
+$('#findings').append("<tr><th>Description</th><td>"+data[i].description+"</td></tr>");
+$('#findings').append("<tr><th>Severity</th><td>Warning</td></tr>");
+$('#findings').append("<tr><th>Line</th><td>"+data[i].line+"</td></tr></tbody></table>");
+$('#hr').append("<hr>");
+
+}
+
+
+});//]]>
+
+</script>
+
+
+</head>
+
+ <div class="container-fluid">
+
+
+
+
+<p style="margin-bottom: 25px;"><img src="https://dl.betterscan.io/wp-content/uploads/2022/05/logo-nobackground-164x32-1.png" style="position:relative; top:-40px;"></p>
+
+<div class="tabbable tabs-left">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#overview" data-toggle="tab">Summary</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane fade in active" id="overview">
+
+
+<div class="alert alert-info">
+    <b>Tags</b>:
+
+        Security Final Report
+
+
+</div>
+
+<section id="information">
+    <div class="box">
+        <h4>Report</h4>
+        <div class="box-content" style="padding: 0;">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th style="border-top: 0;">Type</th>
+
+                         <td style="border-top: 0;">FILE</td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+
+
+</section>
+<hr>
+
+    <section id="file">
+    <h4>File Details</h4>
+    <div class="box">
+        <div class="box-content" style="padding: 0;">
+            <table class="table">
+                <tbody><tr>
+                    <th style="border-top: 0;">File Name</th>
+                    <td style="border-top: 0;">report.html</td>
+                </tr>
+                <tr>
+                    <th>File Type</th>
+                    <td>data</td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div>
+</section>
+
+
+
+  <div align="center"><h1>Scan Report</h1></div>
+
+
+<hr>
+  <h4>Code</h4>
+
+ <section id="findings1">
+    <div class="box">
+
+        <div id="findings" class="box-content" style="padding: 0;">
+        </div>
+    </div>
+</section>
+
+</div>
+
+</body>
+
+
+</html>
+
+
