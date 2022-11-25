@@ -20,20 +20,24 @@ While using Gitleak, we created a .yml file and checked through the github repos
 ![WhatsApp Image 2022-11-25 at 17 48 28](https://user-images.githubusercontent.com/73425600/204057725-be76ac38-c557-418d-ab94-a5ae085b4a2c.png)
 
 4)Mobile Security Framework:
-After installing this tool and entering the host link on the terminal, a screen appeared for us to install apk. When we uploaded the apk file that Alfa team sent us, we got a result of the image below. But we were not sure if it was apk file error or project errors.![Screenshot from 2022-11-25 20-04-04](https://user-images.githubusercontent.com/73425600/204057916-5089804c-ad0e-4f10-82da-9aab72bfb646.png)
+After installing this tool and entering the host link on the terminal, a screen appeared for us to install apk. When we uploaded the apk file that Alfa team sent us, we got a result of the image below. But we were not sure if it was apk file error or project errors.
+
+![Screenshot from 2022-11-25 20-04-04](https://user-images.githubusercontent.com/73425600/204057916-5089804c-ad0e-4f10-82da-9aab72bfb646.png)
 
 5)SpotBugs:
 We first downloaded this tool as zip and then uploaded its plugins to android studio. When we started analysis on the code of friends, it could not find the class file, so a bug was not found. Nor did we see any threats.
 
- file:///home/amine/Downloads/WhatSie/WhatsApp%20Image%202022-11-25%20at%2021.41.31.png
- 
- 6)SonarQube SCA:
-After installing this tool, we pushed the project on SonarQube's homepage and it was detected as gitleak as a result of the analysis. That's why we didn't get the result. Afterwards, we tried SonarCloud with the same method, and as a result, we did not receive any threat or error in the project.
+![Screenshot from 2022-11-25 23-03-05](https://user-images.githubusercontent.com/73425600/204059004-eaf7c007-cd15-4949-8fcf-d750f1f6820b.png)
 
- file:///home/amine/Downloads/WhatSie/WhatsApp%20Image%202022-11-25%20at%2022.12.49.png
- 
+ 6)SonarQube SCA:
+After installing this tool, we pushed the project on SonarQube's homepage and it was detected as gitleak as a result of the analysis. That's why we 
+didn't get the result. Afterwards, we tried SonarCloud with the same method, and as a result, we did not receive any threat or error in the project.
+
+![Screenshot from 2022-11-25 23-02-19](https://user-images.githubusercontent.com/73425600/204059111-6eb9b72c-53a6-4346-9f7a-3930c215a3f9.png)
+
 7)automated-security-helper & Fluid Attack’s Scanner:
 We constantly got a terminal error while installing these two tools and unfortunately we couldn't solve it no matter how hard we tried. We couldn't find the ash file for automated-security-helper, and we couldn't run terminal commands starting with m for Fluid Attack's Scanner.
 
 Nükte Özkılınç ER1328
+
 Amine Ceyda TAndoğan ER1329
